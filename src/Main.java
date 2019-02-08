@@ -1,7 +1,7 @@
 public class Main {
     public static void main(String[] args) {
         if (args.length == 0) {
-            System.out.println("$ todo" + "\n" +
+            System.out.println(
                     "\n" + "Command Line Todo application"
                     + "\n" + "=============================" + "\n"
                     + "\n" + "Command line arguments:" + "\n"
@@ -14,7 +14,7 @@ public class Main {
 
             switch (grade) {
                 case "-l":
-                    System.out.println("Lists all the tasks");
+                    ListTasks.printOutTasks();
                     break;
                 case "-a":
                     System.out.println("Adds a new task");
